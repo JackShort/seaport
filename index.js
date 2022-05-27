@@ -19,19 +19,17 @@ if (!NODE_API_KEY || !OWNER_ADDRESS) {
 
 const BASE_DERIVATION_PATH = `44'/60'/0'/0`
 
-const privateSub = new PrivateKeyWalletSubprovider(PRIVATE_KEY, 4)
-
 const mnemonicWalletSubprovider = new MnemonicWalletSubprovider({
     mnemonic: MNEMONIC,
-    baseDerivationPath: BASE_DERIVATION_PATH,
 })
 const network = 'rinkeby'
 const infuraRpcSubprovider = new RPCSubprovider({
     rpcUrl: 'https://eth-rinkeby.alchemyapi.io/v2/I5yx8gywaNv99D37RzyCeLUw-42ubKOs',
 })
 
+const privateSub = new PrivateKeyWalletSubprovider(PRIVATE_KEY, 4)
 const providerEngine = new Web3ProviderEngine()
-providerEngine.addProvider(privateSub)
+providerEngine.addProvider(mnemonicWalletSubprovider)
 providerEngine.addProvider(infuraRpcSubprovider)
 providerEngine.start()
 
