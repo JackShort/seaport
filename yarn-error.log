@@ -1,0 +1,31 @@
+Arguments: 
+  /Users/jackshort/.nvm/versions/node/v16.11.1/bin/node /Users/jackshort/.nvm/versions/node/v16.11.1/bin/yarn add opensea-js@beta
+
+PATH: 
+  /Users/jackshort/.nvm/versions/node/v16.11.1/bin:/Users/jackshort/.emacs.d/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jackshort/.nvm/versions/node/v16.11.1/bin:/Users/jackshort/.emacs.d/bin:/Users/jackshort/.fig/bin:/Users/jackshort/.foundry/bin:/Users/jackshort/.foundry/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, open '/Users/jackshort/Library/Caches/Yarn/v6/.tmp/7ff8dac337b095c417e7d9f2c17e8731/.yarn-tarball.tgz'
+
+npm manifest: 
+  {
+    "name": "seaport",
+    "version": "1.0.0",
+    "main": "index.ts",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
